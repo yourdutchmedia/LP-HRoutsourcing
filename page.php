@@ -21,6 +21,20 @@ get_header();
                 </div>
             </div>
         </div>
+        <a href="#scroll_container" class="scroll-link">
+            <div class="svg-mouse">
+                <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130"
+                     preserveAspectRatio="xMidYMid meet">
+                    <g fill="none" fill-rule="evenodd">
+                        <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"></rect>
+                        <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"></circle>
+                    </g>
+                </svg>
+            </div>
+        </a>
+        <div id="scroll_container" class="scroll_container">
+
+        </div>
         <div class="line"></div>
     </section>
 
@@ -47,20 +61,6 @@ get_header();
                 </div>
             </div>
         </div>
-        <a href="#scroll_container" class="scroll-link">
-            <div class="svg-mouse">
-                <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130"
-                     preserveAspectRatio="xMidYMid meet">
-                    <g fill="none" fill-rule="evenodd">
-                        <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"></rect>
-                        <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"></circle>
-                    </g>
-                </svg>
-            </div>
-        </a>
-        <div id="scroll_container" class="scroll_container">
-
-        </div>
     </section>
 
     <section class="half-text grey">
@@ -76,8 +76,9 @@ get_header();
                         <h2><?= field('info_tekst_omgedraaid_titel') ?></h2>
                     </div>
                     <div class="content">
+                        <div class="extra-content-large">
                         <?= field('info_tekst_omgedraaid_tekst') ?>
-                        <div class="extra-content"><?= field('info_tekst_omgedraaid_extra_tekst') ?></div>
+                        <?= field('info_tekst_omgedraaid_extra_tekst') ?></div>
                         <div class="more-info">Meer info</div>
                     </div>
                 </div>
