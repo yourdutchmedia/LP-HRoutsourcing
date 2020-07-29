@@ -223,6 +223,12 @@
         max-height: 0;
       }
     }
+    .extra-content-large {
+      transition: all .8s ease-in-out;
+      @media (max-width: 575px) {
+        max-height: 108px;
+      }
+    }
     .more-info {
       display: none;
       color: #df081d;
@@ -264,6 +270,10 @@
     }
     &.active {
       .extra-content {
+        margin-bottom: 20px;
+        max-height: 1000px;
+      }
+      .extra-content-large {
         margin-bottom: 20px;
         max-height: 1000px;
       }

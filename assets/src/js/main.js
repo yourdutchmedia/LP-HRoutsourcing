@@ -27,3 +27,13 @@ $('.more-info').click(function () {
         $(this).parent().addClass('active')
     }
 });
+
+$('.more-info-large').click(function () {
+    if($(this).parent().hasClass('active')) {
+        $(this).html('Meer info')
+        $(this).parent().removeClass('active')
+    } else {
+        $(this).html('Minder info')
+        $(this).parent().addClass('active')
+    }
+});

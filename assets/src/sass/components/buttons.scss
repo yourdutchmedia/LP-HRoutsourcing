@@ -17,8 +17,9 @@
   position: absolute;
   top: -68px;
   transform: translateY(100%);
-  @media (max-width: 768px){
-    top: -65px;
+  z-index: -1;
+  @media (max-width: 1200px){
+    display: none;
   }
 }
 
@@ -29,6 +30,9 @@
   left: 50%;
   bottom: 25px;
   transform: translateX(-50%);
+  @media (max-width: 1200px){
+    display: none;
+  }
 }
 
 .scroll-link .svg-mouse svg {

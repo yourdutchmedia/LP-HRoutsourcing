@@ -29,15 +29,14 @@ get_header();
             <div class="row align-items-center">
                 <div class="col-lg-7 col-sm-6">
                     <div class="content">
-                        <?= field('info_tekst_top_content') ?>
-                        <div class="extra-content"><?= field('info_tekst_extra_content') ?></div>
+                        <div class="extra-content-large"><?= field('info_tekst_top_content') ?></div>
                         <div class="more-info">Meer info</div>
                     </div>
                     <div class="title">
                         <h2><?= field('info_tekst_titel') ?></h2>
                     </div>
                     <div class="content">
-                        <div class="extra-content"><?= field('info_tekst_extra_content') ?></div>
+                        <div class="extra-content-large"><?= field('info_tekst_extra_content') ?></div>
                         <div class="more-info">Meer info</div>
                     </div>
                 </div>
