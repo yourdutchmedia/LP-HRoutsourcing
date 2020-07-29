@@ -24,6 +24,9 @@ footer {
       display: flex;
       justify-content: end;
     }
+    h2 {
+      margin: 0;
+    }
     div {
       display: inline-block;
       &:first-child {
@@ -31,12 +34,12 @@ footer {
         margin-right: 50px;
         position: absolute;
         left: 15px;
+        top: 28px;
       }
       a {
         display: block;
       }
       img {
-        margin-top: 20px;
         height: 40px !important;
         margin-right: 30px;
       }
@@ -154,5 +157,4 @@ footer {
       }
     }
   }
-
 }

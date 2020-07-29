@@ -1,12 +1,12 @@
 <?php
 get_header();
 ?>
-    <section class="hero pt-lg-0 pb-lg-0">
+    <section class="hero pt-lg-0 pb-lg-0 position-relative">
         <div class="background" style="background-image: url(<?= field('hero_achtergrond') ?>)"></div>
         <div class="container">
             <div class="logo"><?= wp_img('hero_logo') ?></div>
             <div class="row hero-row align-items-center">
-                <div class="col-xl-12">
+                <div class="col-sm-6">
                     <div class="title">
                         <h1><?= field('hero_titel') ?></h1>
                         <div class="border-top"></div>
@@ -24,15 +24,19 @@ get_header();
         <div class="line"></div>
     </section>
 
-    <section class="half-text">
+    <section class="half-text text-top">
         <div class="container container-right">
             <div class="row align-items-center">
                 <div class="col-lg-7 col-sm-6">
+                    <div class="content">
+                        <?= field('info_tekst_top_content') ?>
+                        <div class="extra-content"><?= field('info_tekst_extra_content') ?></div>
+                        <div class="more-info">Meer info</div>
+                    </div>
                     <div class="title">
                         <h2><?= field('info_tekst_titel') ?></h2>
                     </div>
                     <div class="content">
-                        <?= field('info_tekst_content') ?>
                         <div class="extra-content"><?= field('info_tekst_extra_content') ?></div>
                         <div class="more-info">Meer info</div>
                     </div>
@@ -43,6 +47,20 @@ get_header();
                     </div>
                 </div>
             </div>
+        </div>
+        <a href="#scroll_container" class="scroll-link">
+            <div class="svg-mouse">
+                <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130"
+                     preserveAspectRatio="xMidYMid meet">
+                    <g fill="none" fill-rule="evenodd">
+                        <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"></rect>
+                        <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"></circle>
+                    </g>
+                </svg>
+            </div>
+        </a>
+        <div id="scroll_container" class="scroll_container">
+
         </div>
     </section>
 
@@ -73,18 +91,18 @@ get_header();
             <div class="row align-items-center">
                 <div class="col-lg-7 col-sm-6 order-sm-0 order-1">
                     <div class="title">
-                        <h2><?= field('info_tekst_lijst_titel') ?></h2>
+                        <h2><?= field('info_tekst_3_titel') ?></h2>
                     </div>
                     <div class="content">
-                        <?= field('info_tekst_lijst_content') ?>
-                        <div class="extra-content"><?= field('info_tekst_lijst_extra_content') ?></div>
+                        <?= field('info_tekst_3_content') ?>
+                        <div class="extra-content"><?= field('info_tekst_3_extra_content') ?></div>
                         <div class="more-info">Meer info</div>
 
                     </div>
                 </div>
                 <div class="col-lg-4 col-sm-6 offset-lg-1 order-sm-1 order-0">
                     <div class="img-holder">
-                        <?= wp_img('info_tekst_lijst_afbeelding') ?>
+                        <?= wp_img('info_tekst_3_afbeelding') ?>
                     </div>
                 </div>
             </div>
@@ -94,13 +112,13 @@ get_header();
     <section class="cta">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="title">
                         <div class="border-top"></div>
                         <h2><?= field('cta_titel') ?></h2>
                     </div>
                 </div>
-                <div class="col-md-6 text-right">
+                <div class="col-md-5 text-right">
                     <div class="button">
                         <a href="<?= field('cta_button_link') ?>" class="full_btn"><?= field('cta_button_tekst') ?></a>
                     </div>
@@ -111,7 +129,7 @@ get_header();
 
     <section class="contact">
         <div class="container">
-            <div class="row align-items-end">
+            <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="title">
                         <h2><?= field('contact_titel') ?></h2>
@@ -126,6 +144,9 @@ get_header();
                             <?= wp_img('contact_icon_tel') ?>
                         </div>
                         <div class="contact-text">
+                            <div class="person">
+                                <?= field('contact_tel_person') ?>
+                            </div>
                             <?= field('contact_icon_tel_tekst') ?>
                         </div>
                     </a>

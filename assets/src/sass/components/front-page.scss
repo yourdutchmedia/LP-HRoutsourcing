@@ -75,6 +75,22 @@
           font-size: 28px;
         }
       }
+      .border-bottom {
+        left: 500px;
+        right: auto;
+        @media (max-width: 1600px) {
+          left: 370px;
+        }
+        @media (max-width: 1200px) {
+          left: 320px;
+        }
+        @media (max-width: 991px) {
+          left: 300px;
+        }
+        @media (max-width: 575px) {
+          left: 180px;
+        }
+      }
     }
 
     .subtext {
@@ -83,6 +99,12 @@
       p {
         color: #fff;
         font-size: 20px;
+        @media (max-width: 768px) {
+          font-size: 18px;
+        }
+        @media (max-width: 575px) {
+          font-size: 16px;
+        }
       }
     }
     .button {
@@ -103,6 +125,11 @@
 }
 
 .half-text {
+  &.text-top {
+    .title {
+      margin: 40px 0;
+    }
+  }
   &.grey {
     background: #f8f8f9;
     @media (max-width: 575px) {
@@ -258,7 +285,7 @@
 .cta {
   background: #152358;
   .title {
-    padding: 20px 0 20px 30px;
+    padding: 20px 0 20px 60px;
     position: relative;
     @media (max-width: 575px) {
       padding: 0 0 0 20px;
@@ -295,6 +322,7 @@
 
 .contact {
   background: #f8f8f9;
+  padding: 150px 0;
   .title {
     margin-bottom: 40px;
     h2 {
@@ -359,6 +387,10 @@
       }
       @media (max-width: 991px) {
         padding-left: 28px;
+      }
+      .person {
+        color: #df081d;
+        margin-bottom: 10px;
       }
     }
   }
